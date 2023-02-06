@@ -1,5 +1,5 @@
 {
-  "name": "tool-name",
+  "name": "components-wrapper",
   "author": "wsafight",
   "version": "0.0.1",
   "license": "MIT",
@@ -27,21 +27,24 @@
       "pre-commit": "dts lint"
     }
   },
-  "keywords": [],
+  "keywords": [
+    "web-component",
+    "wrapper"
+  ],
   "prettier": {
     "printWidth": 80,
     "semi": false,
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "module": "dist/tool-name.esm.js",
+  "module": "dist/web-component-wrapper.esm.js",
   "size-limit": [
     {
-      "path": "dist/tool-name.cjs.production.min.js",
+      "path": "dist/web-component-wrapper.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/tool-name.esm.js",
+      "path": "dist/web-component-wrapper.esm.js",
       "limit": "10 KB"
     }
   ],

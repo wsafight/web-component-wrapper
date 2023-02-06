@@ -1,3 +1,12 @@
-export const add = (num1: number, num2: number): number => {
-  return num1 + num2
-}
+const defineComponent =
+  (component: CustomElementConstructor) => (componentName: string) => {
+    customElements.define(componentName, component)
+  }
+
+const defineComponents =
+  (prefix: string) =>
+  (componentName: string, component: CustomElementConstructor) => {
+    customElements.define(`${prefix}-${componentName}`, component)
+  }
+
+export { defineComponent, defineComponents }
